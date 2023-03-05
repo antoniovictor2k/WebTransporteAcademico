@@ -15,30 +15,29 @@
     cursor: default;
   }
 .custom-map-control-button{
-   border: 0; 
-  
-  border-radius: 50px;
-  margin: 38em;
-  padding: 20px;
-  
-
-  font: 400 18px Roboto, Arial, sans-serif;;
-  background-color: #000000;
-  color: #fff;
-
-
-    overflow: hidden;
-    cursor: pointer;
+   border: 0;
+   border-radius: 50px;
+   margin: 38em;
+   padding: 20px;
+   font: 400 18px Roboto, Arial, sans-serif;
+   background-color: #000000;
+   color: #fff;
+   cursor: default;
 }
 
 .custom-map-control-button:hover{
+    cursor: pointer;
     background: rgb(0, 92, 49);
 }
+/* não aparecer na tela */
 .gmnoprint, .gm-control-active, #checkboxMenu {
   display: none;
 }
+#heckboxMenu{
+  cursor: default;
+}
 
-.buttonChama{
+/* .buttonChama{
   position: fixed;
   top: 500px;
   left: 350px;
@@ -53,9 +52,9 @@ border-radius: 50px;
 
   align-items: center;
   display: flex;
-}
+} */
 
-.CaixaIconeMenu{
+.caixaIconeMenu{
   
   background-color: #000;
   border-radius: 50px;
@@ -67,7 +66,7 @@ border-radius: 50px;
   left: 15px;
   top: 10px;
 
-  
+  cursor: default;
 
 }
 label{
@@ -126,10 +125,19 @@ label{
 
 }
 
+/* para dispositivos ate 500 de lagurar */
+
 @media (max-width: 500px) {
   
-  .CaixaIconeMenu, .custom-map-control-button{
-    background-color: #ff0000;
+  
+  .custom-map-control-button{
+    font-weight: 500;
+    padding: 38px 15px;
+        
+    margin: 34em;
+
+    border: 1px solid #00ffaa;
   }
   
 }
+/*FIM  para dispositivos ate 500 de lagurar */

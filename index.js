@@ -8,7 +8,7 @@ let map, infoWindow;
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: -9.577058, lng: -35.761117 },
-        zoom: 19,
+        zoom: 15,
         
     });
     //   const markerView = new google.maps.marker.AdvancedMarkerView({
