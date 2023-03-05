@@ -1,0 +1,97 @@
+html, body {
+    font-family: 'Inter';
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+    background: #113036;
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+input{
+    border: 0;
+}
+
+input::placeholder {
+    color: #fff;
+    
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.logoMarca{
+    margin-top: 68px;
+    margin-bottom: 100px;
+}
+#inputEmail, #inputSenha
+{   
+    font-size: 1.2em;
+
+    width: 280px;
+    height: 44px;
+    padding: 0px 10px 0 10px;
+
+    color: #fff;
+    background: rgba(204, 204, 204, 0.3);
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    
+}
+#inputEmail:focus, #inputSenha:focus{
+    border-bottom: 1px solid #ffffff ;
+   
+    text-decoration: none;
+    cursor: text;
+    outline: none;
+    
+}
+
+.buttonEntrar{
+    text-align: center;
+
+    width: 300px;
+    height: 44px;
+
+    border-radius: 50px;
+
+    background: #000000;
+}
+.buttonEntrar:hover{
+    background-color: #205d69;
+}
+.buttonEntrar p{
+    font-weight: 700;
+    font-size: 1.3em;
+    
+    margin: 0;
+    border: 0;
+    padding: 8px 0 0 0;
+
+    cursor: pointer;
+}
+
+.linkRecuperarSenha{
+    margin-top: -12px;
+}
+.linkCadastro{
+    margin-top: 192px;
+}
+.linkCadastro span{
+    font-size: 1.1em;
+    font-weight: 700;
+}
