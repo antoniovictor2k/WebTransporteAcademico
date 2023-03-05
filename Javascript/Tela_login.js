@@ -14,7 +14,7 @@ function fazerLogin(){
 
     if(email != "aluno.ifal@ifal.edu.br" && senha != "aluno.ifal")
     {
-        alert("Email ou Senha esta(ão) Incorreto.")
+        alert("Email ou Senha esta(ão) Incorreto(s).")
         inputEmail.focus();
         return;
     }
