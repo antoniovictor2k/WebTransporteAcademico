@@ -1,263 +1,54 @@
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Map</title>
-    
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-  
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
 
-    <style>
-     /*
- * Always set the map height explicitly to define the size of the div element
- * that contains the map.
- */
- #map {
-    height: 100%;
-    cursor: default;
-  }
-  
-  /*
-   * Optional: Makes the sample page fill the window.
-   */
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    
-    cursor: default;
-  }
-.custom-map-control-button{
-   border: 0; 
-  
-  border-radius: 50px;
-  margin: 38em;
-  padding: 20px;
-  
-  
-/* display: flex;
-
-  position: absolute;
-  top: 100px;
-  left: 80%; */
-
-  font: 400 18px Roboto, Arial, sans-serif;;
-  background-color: #000000;
-  color: #fff;
-
-
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.custom-map-control-button:hover{
-    background: rgb(0, 92, 49);
-}
-.gmnoprint, .gm-control-active, #checkboxMenu {
-  display: none;
-}
-
-.buttonChama{
-  position: fixed;
-  top: 500px;
-  left: 350px;
-  background-color: black;
-  color: #fff;
-
-border-radius: 50px;
- cursor: pointer;
-  height: 35px;
-  width: max-content;
-
-
-  align-items: center;
-  display: flex;
-}
-
-.CaixaIconeMenu{
-  
-  background-color: #000;
-  border-radius: 50px;
-  padding: 0px 10px;
-  font-size: 2em;
-  color: #fff;
-
-  position: absolute;
-  left: 15px;
-  top: 10px;
-
-  
-
-}
-label{
-  cursor: pointer;
-}
-/* tela preta do menu */
-#caixaTelaMenu{
-  position: absolute;
-  top: 0;
-  background-color: #000;
-  height: 100%;
-  width: 80%;
- 
-  display: none;
-}
-/* Para Exibir a tela preta do Menu */
-#checkboxMenu:checked ~ #caixaTelaMenu {
-  display: block;
-}
-/* Para Volta a tela Normal */
-#checkboxMenu:checked ~ #caixaRetirarMenu label{
-  display: block;
-}
-/* Tela transparente para feicha menu */
- #caixaRetirarMenu label{
-  position: absolute;
-  top: 0;
-  right: 0;
- 
-  height: 100%;
-  width: 20%;
-  display: none;
-} 
-
-/* Icone de retornar ao menu */
-
-.imgRetornarMenu{
-  margin: 16px;
-}
-
-/* Mudar cor ao passa mouse */
-.CaixaIconeMenu:hover{
-  background-color: rgb(0, 92, 49);
-}
-
-/* Container do menu opção ou button */
-
-.container{
-  margin: 10px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  color: #fff;
-}
-
-
-
-  /* [class$=api-load-alpha-banner] {
-    display: none;
-  }
-  #beachFlagImg{
-    width: 20px;
-  }   */
-    </style>
-</head>
-<body>
-    
     <!-- <div class="barraSuperior">
         ola
     </div>
     <div class="barraInferior"></div> -->
-    <div id="map"></div>
+    <div id="map">
+      
+      
+      
+    </div>
+    <div class="CaixaIconeMenu">
+      <label for="checkboxMenu">&#8801;</label>
+      
+    </div>
+    <input type="checkbox" name="" id="checkboxMenu">
+    <!-- caixaTelaMenu  -->
+    <div id="caixaTelaMenu">
+      <div class="container">
+
+        <div>Tudobem</div>
+        <div>Tudobem</div>
+        <div>Tudobem</div>
+        <div>Tudobem</div>
+        <div>Tudobem</div>
+
+      </div>
+    </div>
+      <div id="caixaRetirarMenu"><label for="checkboxMenu">
+        <img src="img/Icon_Retorna_Pagina.png" class="imgRetornarMenu" alt="icon_voltar">
+      </label></div>
     
+    <!-- <div class="buttonChama" onclick="">Ativador</div> -->
+
     <!--
-        The `defer` attribute causes the callback to execute after the full HTML
-        document has been parsed. For non-blocking uses, avoiding race conditions,
-        and consistent behavior across browsers, consider loading using Promises
-        with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-    -->
-<!-- chave key=AIzaSyBRMU4LkxXu-mcV8mtB-p0R5jBR0V1iWI8 -->
-
-
-<script
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRMU4LkxXu-mcV8mtB-p0R5jBR0V1iWI8&callback=initMap&v=weekly"
-defer
-></script>
-<script>
-    let map, infoWindow;
-
-
-
-// -9.577058, -35.761117
-
-
-function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: -9.577058, lng: -35.761117 },
-        zoom: 10,
-        
-    });
-    //   const markerView = new google.maps.marker.AdvancedMarkerView({
-        //     map,
-        //     position: { lat: -9.570922, lng:-35.772275 },
-        //   });
-       
-    //    codigo para cria uma localização com imagem
-       
-    //     const beachFlagImg = document.createElement("img");
-        
-        
-        
-    //     beachFlagImg.src  = "img/icononibus.jpg" ;
-        
-        
-    //     const beachFlagMarkerView = new google.maps.marker.AdvancedMarkerView({
-    //         map,
-    //         position: { lat: -9.570922, lng: -35.772275 },
-    //         content: beachFlagImg ,
-    //         title: "A marker using a custom PNG Image",
-    //     });
-    //     beachFlagImg.style.width = '80px';
-
-    
-infoWindow = new google.maps.InfoWindow();
-
-const locationButton = document.createElement("button");
-
-locationButton.textContent = "Pan to Current Location";
-locationButton.classList.add("custom-map-control-button");
-map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
-locationButton.addEventListener("click", ()=>{
-
-    if(navigator.geolocation){
-        navigator.geolocation.getCurrentPosition(
-            (position) => {
-                const pos = {
-                    lat: position.coords.latitude,
-                    lng: position.coords.longitude,
-                };
-
-                infoWindow.setPosition(pos);
-                infoWindow.setContent("Location found.");
-                infoWindow.open(map);
-                map.setCenter(pos);
-            },
-            () => {
-                handleLocationError(true, infoWindow, map.getCenter());
-            }
-        );   
-    }
-    else {
-        handleLocationError(false, infoWindow, map.getCenter());
-    }
-
-
-});
-
-
-}
-
-// -9.570922, -35.772275
-
-
-window.initMap = initMap;
-
-
-</script>
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises
+      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+      -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRMU4LkxXu-mcV8mtB-p0R5jBR0V1iWI8&callback=initMap&libraries=marker,places&v=beta"
+      defer
+    ></script>
   </body>
 </html>

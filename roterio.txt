@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Map</title>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+  
+
+    <style>
+        /*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+ #map {
+    height: 100%;
+  }
+  
+  /*
+   * Optional: Makes the sample page fill the window.
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.custom-map-control-button{
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0,3);
+    margin: 10px;
+    padding: 0 0,5em;
+    font: 400 18px Roboto, Arial, sans-serif;;
+    overflow: hidden;
+    height: 40px;
+    cursor: pointer;
+}
+
+.custom-map-control-button:hover{
+    background: rgb(235, 235, 235);
+}
+
+
+
+  /* [class$=api-load-alpha-banner] {
+    display: none;
+  }
+  #beachFlagImg{
+    width: 20px;
+  }   */
+    </style>
+</head>
+<body>
+    
+    <!-- <div class="barraSuperior">
+        ola
+    </div>
+    <div class="barraInferior"></div> -->
+    <div id="map"></div>
+    
+    <!--
+        The `defer` attribute causes the callback to execute after the full HTML
+        document has been parsed. For non-blocking uses, avoiding race conditions,
+        and consistent behavior across browsers, consider loading using Promises
+        with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+<!-- chave key=AIzaSyBRMU4LkxXu-mcV8mtB-p0R5jBR0V1iWI8 -->
+
+
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRMU4LkxXu-mcV8mtB-p0R5jBR0V1iWI8&callback=initMap&v=weekly"
+defer
+></script>
+<script>
+    let map, infoWindow;
+
+
+
+// -9.577058, -35.761117
+
+
+function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: -9.577058, lng: -35.761117 },
+        zoom: 10,
+        
+    });
+    //   const markerView = new google.maps.marker.AdvancedMarkerView({
+        //     map,
+        //     position: { lat: -9.570922, lng:-35.772275 },
+        //   });
+       
+    //    codigo para cria uma localização com imagem
+       
+    //     const beachFlagImg = document.createElement("img");
+        
+        
+        
+    //     beachFlagImg.src  = "img/icononibus.jpg" ;
+        
+        
+    //     const beachFlagMarkerView = new google.maps.marker.AdvancedMarkerView({
+    //         map,
+    //         position: { lat: -9.570922, lng: -35.772275 },
+    //         content: beachFlagImg ,
+    //         title: "A marker using a custom PNG Image",
+    //     });
+    //     beachFlagImg.style.width = '80px';
+
+    
+infoWindow = new google.maps.InfoWindow();
+
+const locationButton = document.createElement("button");
+
+locationButton.textContent = "Pan to Current Location";
+locationButton.classList.add("custom-map-control-button");
+map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+locationButton.addEventListener("click", ()=>{
+
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude,
+                };
+
+                infoWindow.setPosition(pos);
+                infoWindow.setContent("Location found.");
+                infoWindow.open(map);
+                map.setCenter(pos);
+            },
+            () => {
+                handleLocationError(true, infoWindow, map.getCenter());
+            }
+        );   
+    }
+    else {
+        handleLocationError(false, infoWindow, map.getCenter());
+    }
+
+
+});
+
+
+}
+
+// -9.570922, -35.772275
+
+
+window.initMap = initMap;
+
+
+</script>
+  </body>
+</html>

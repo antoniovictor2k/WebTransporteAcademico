@@ -1,0 +1,145 @@
+/*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+ #map {
+    height: 100%;
+    cursor: default;
+  }
+  
+  /*
+   * Optional: Makes the sample page fill the window.
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    cursor: default;
+  }
+.custom-map-control-button{
+   border: 0; 
+  
+  border-radius: 50px;
+  margin: 38em;
+  padding: 20px;
+  
+  
+/* display: flex;
+
+  position: absolute;
+  top: 100px;
+  left: 80%; */
+
+  font: 400 18px Roboto, Arial, sans-serif;;
+  background-color: #000000;
+  color: #fff;
+
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.custom-map-control-button:hover{
+    background: rgb(0, 92, 49);
+}
+.gmnoprint, .gm-control-active, #checkboxMenu {
+  display: none;
+}
+
+.buttonChama{
+  position: fixed;
+  top: 500px;
+  left: 350px;
+  background-color: black;
+  color: #fff;
+
+border-radius: 50px;
+ cursor: pointer;
+  height: 35px;
+  width: max-content;
+
+
+  align-items: center;
+  display: flex;
+}
+
+.CaixaIconeMenu{
+  
+  background-color: #000;
+  border-radius: 50px;
+  padding: 0px 10px;
+  font-size: 2em;
+  color: #fff;
+
+  position: absolute;
+  left: 15px;
+  top: 10px;
+
+  
+
+}
+label{
+  cursor: pointer;
+}
+/* tela preta do menu */
+#caixaTelaMenu{
+  position: absolute;
+  top: 0;
+  background-color: #000;
+  height: 100%;
+  width: 80%;
+ 
+  display: none;
+}
+/* Para Exibir a tela preta do Menu */
+#checkboxMenu:checked ~ #caixaTelaMenu {
+  display: block;
+}
+/* Para Volta a tela Normal */
+#checkboxMenu:checked ~ #caixaRetirarMenu label{
+  display: block;
+}
+/* Tela transparente para feicha menu */
+ #caixaRetirarMenu label{
+  position: absolute;
+  top: 0;
+  right: 0;
+ 
+  height: 100%;
+  width: 20%;
+  display: none;
+} 
+
+/* Icone de retornar ao menu */
+
+.imgRetornarMenu{
+  margin: 16px;
+}
+
+/* Mudar cor ao passa mouse */
+.CaixaIconeMenu:hover{
+  background-color: rgb(0, 92, 49);
+}
+
+/* Container do menu opção ou button */
+
+.container{
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  color: #fff;
+}
+
+
+
+  /* [class$=api-load-alpha-banner] {
+    display: none;
+  }
+  #beachFlagImg{
+    width: 20px;
+  }   */
