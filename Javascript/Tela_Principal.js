@@ -53,7 +53,7 @@ locationButton.addEventListener("click", ()=>{
                 };
 
                 infoWindow.setPosition(pos);
-                infoWindow.setContent("<img src=../img/iconBus2.png alt=Icon_Onibus>");
+                infoWindow.setContent("<img src=../img/iconBusTeto.png alt=Icon_Onibus>");
                 infoWindow.open(map);
                 map.setCenter(pos);
             },
