@@ -1,39 +1,40 @@
 /* Inicio  Tamanho padrao para todos os dispositivos.  */
 
- #map {
-    height: 100%;
-    cursor: default;
-  }
-  
-  
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+#map {
+  height: 100%;
+  cursor: default;
+}
 
-    font-family: Arial, Helvetica, sans-serif;
-    
-    cursor: default;
-  }
- 
 
-.divAtivarLocalizacao{
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  cursor: default;
+}
+
+
+.divAtivarLocalizacao {
   position: relative;
-  
+
   bottom: 100px;
   font-size: 1.2em;
   font-weight: 600;
- 
+
   color: #fff;
   cursor: default;
-  
+
   display: flex;
   justify-content: center;
   text-align: center;
   justify-items: center;
 }
-.divAtivarLocalizacao p{
+
+.divAtivarLocalizacao p {
   background-color: #000000;
   border-radius: 50px;
   padding: 22px 5px;
@@ -42,23 +43,26 @@
 }
 
 
-.divAtivarLocalizacao p:hover{
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.192);
-    border: 1px solid #ff0000;
+.divAtivarLocalizacao p:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.192);
+  border: 1px solid #ff0000;
 
 }
 
 /* não aparecer na tela */
-.gmnoprint, .gm-control-active, #checkboxMenu {
+.gmnoprint,
+.gm-control-active,
+#checkboxMenu {
   display: none;
 }
-#heckboxMenu{
+
+#heckboxMenu {
   cursor: default;
 }
 
-.caixaIconeMenu{
-  
+.caixaIconeMenu {
+
   background-color: #000;
   border-radius: 50px;
   padding: 1px 15px;
@@ -72,78 +76,85 @@
   cursor: default;
 
 }
-label{
+
+label {
   cursor: pointer;
 }
+
 /* tela preta do menu */
-#caixaTelaMenu{
+#caixaTelaMenu {
   position: absolute;
   top: 0;
   background-color: #000;
   height: 100%;
   width: 80%;
- 
-/* block para testar e desenvolver o Menu */
+
+  /* block para testar e desenvolver o Menu */
 
   display: none;
 }
+
 /* Para Exibir a tela preta do Menu */
-#checkboxMenu:checked ~ #caixaTelaMenu {
+#checkboxMenu:checked~#caixaTelaMenu {
   display: block;
 }
+
 /* Para Volta a tela Normal */
-#checkboxMenu:checked ~ #caixaRetirarMenu label{
+#checkboxMenu:checked~#caixaRetirarMenu label {
   display: block;
 }
+
 /* Tela transparente para feicha menu */
- #caixaRetirarMenu label{
+#caixaRetirarMenu label {
   position: absolute;
   top: 0;
   right: 0;
- 
+
   height: 100%;
   width: 20%;
   display: none;
-} 
+}
 
 /* para dispositivos ate 500 de lagurar */
 
 @media (max-width: 500px) {
-  
-  
-  .divAtivarLocalizacao{
-   bottom: 140px;
-   cursor: pointer;
+
+
+  .divAtivarLocalizacao {
+    bottom: 140px;
+    cursor: pointer;
   }
-  .divAtivarLocalizacao p{
+
+  .divAtivarLocalizacao p {
 
     padding: 30px 14px;
     cursor: pointer;
 
-    
+
   }
 
-  .caixaIconeMenu{
+  .caixaIconeMenu {
     padding: 3px 15px;
   }
-  
+
 }
+
 /*FIM  para dispositivos ate 500 de lagurar */
 
 /* Icone de retornar ao menu */
 
-.imgRetornarMenu{
+.imgRetornarMenu {
   margin: 16px;
 }
 
 /* Mudar cor ao passa mouse */
-.CaixaIconeMenu:hover{
+.CaixaIconeMenu:hover {
   background-color: rgb(0, 92, 49);
 }
 
 /* Container do menu opção ou button */
 
-.container{
+.container {
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -153,43 +164,49 @@ label{
 
 /* Menu Perfil */
 
-.menuIndetificacao{
+.menuIndetificacao {
   display: flex;
   flex-direction: row;
   margin-top: 0px;
   gap: 15px;
 }
-.divMenuImg{
+
+.divMenuImg {
   background-color: #fff;
   height: 55px;
   border-radius: 50px;
 }
-.divMenuTexto{
+
+.divMenuTexto {
   margin-left: 10px;
   gap: 0px;
 }
-.divMenuTexto pre{
+
+.divMenuTexto pre {
   font-weight: 700;
   font-size: 1.3em;
   margin: 0 0 8px 0;
 }
-.divMenuTexto .divMenuTextoAluno{
+
+.divMenuTexto .divMenuTextoAluno {
   font-size: 1.6em;
 }
-.divLinhaHorizontal{
-  margin-left: -20px;
+
+.divLinhaHorizontal {
+  margin-left: 0px;
   padding: 0;
   border: 1px solid #fff;
-  width: 17.9em;
+  width: auto;
 }
 
-.divMenuButton{
+.divMenuButton {
   font-size: 1.5em;
   font-weight: 600;
 
-  
+
 }
-.divMenuButton div{
+
+.divMenuButton div {
   margin-bottom: 20px;
 }
 
@@ -201,12 +218,12 @@ label{
 
 } */
 
- a{
+a {
   color: #fff;
   text-decoration: none;
 }
 
-.divButtonSair{
+.divButtonSair {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -217,41 +234,45 @@ label{
 
   cursor: default;
 }
-.divButtonSair p{
+
+.divButtonSair p {
   margin: 0;
   padding: 0;
   border: 0;
-  
+
   background-color: #141414;
   border: 1px solid #fff;
   border-radius: 50px;
   padding: 13px 40px;
 
   cursor: pointer;
-  
+
 }
-.divButtonSair p:hover{
+
+.divButtonSair p:hover {
   background-color: #001d13;
 }
-.divDesenvolvedor{
+
+.divDesenvolvedor {
   display: flex;
   text-align: center;
   justify-content: center;
-  
+
   position: absolute;
-bottom: 5px;
+  bottom: 5px;
 
 
   font-size: 0.9em;
-  
+
   width: max-content;
 }
-.divMenuLinks{
+
+.divMenuLinks {
   line-height: 1.5em;
   font-weight: 700;
 }
 
-.divMenuLinks span{
+.divMenuLinks span {
   font-weight: 400;
 }
 
@@ -267,25 +288,26 @@ bottom: 5px;
   overflow: 0;
   top: 0;
   left: 0;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(-0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(-0, 0, 0);
+  transform: translate3d(0, 0, 0);
   background-color: transparent;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
   padding: 0px;
   -webkit-box-shadow: 0 0px 0px 0px rgb(0 0 0);
-  -moz-box-shadow: 0 0px 0px 0px rgba(0,0,0);
+  -moz-box-shadow: 0 0px 0px 0px rgba(0, 0, 0);
   box-shadow: 0 0px 0px 0px;
- 
+
 }
-.gm-style-iw-tc, .gm-ui-hover-effect 
- {
+
+.gm-style-iw-tc,
+.gm-ui-hover-effect {
   display: none;
 }
 
-.imgbus{
+.imgbus {
   width: 50px;
 
 }
