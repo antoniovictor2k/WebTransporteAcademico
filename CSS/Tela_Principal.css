@@ -55,10 +55,12 @@
   
   .divAtivarLocalizacao{
    bottom: 140px;
+   cursor: pointer;
   }
   .divAtivarLocalizacao p{
 
     padding: 30px 14px;
+    cursor: pointer;
 
     
   }
