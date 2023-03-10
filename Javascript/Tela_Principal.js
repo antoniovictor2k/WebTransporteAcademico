@@ -2,13 +2,14 @@ let map, infoWindow;
 
 
 
-// -9.577058, -35.761117
+//  -35.803929
+// -9.511309, -35.803929
 
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: -9.577058, lng: -35.761117 },
-        zoom: 15,
+        center: { lat: -9.511309, lng: -35.803929 },
+        zoom: 13,
         
     });
     //   const markerView = new google.maps.marker.AdvancedMarkerView({
