@@ -125,7 +125,8 @@ input::placeholder {
 
 }
 .linkFazerLogin{
-    margin-top: 100px;
+    position: absolute;
+    bottom: 5px;
 }
 .linkFazerLogin span{
     font-size: 1.1em;

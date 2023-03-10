@@ -89,7 +89,8 @@ input::placeholder {
     margin-top: -12px;
 }
 .linkCadastro{
-    margin-top: 192px;
+    position: absolute;
+    bottom: 5px;
 }
 .linkCadastro span{
     font-size: 1.1em;
