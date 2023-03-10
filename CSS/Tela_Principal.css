@@ -48,25 +48,7 @@
     border: 1px solid #ff0000;
 
 }
-/* para dispositivos ate 500 de lagurar */
 
-@media (max-width: 500px) {
-  
-  
-  .divAtivarLocalizacao{
-   bottom: 140px;
-   cursor: pointer;
-  }
-  .divAtivarLocalizacao p{
-
-    padding: 30px 14px;
-    cursor: pointer;
-
-    
-  }
-  
-}
-/*FIM  para dispositivos ate 500 de lagurar */
 /* não aparecer na tela */
 .gmnoprint, .gm-control-active, #checkboxMenu {
   display: none;
@@ -123,6 +105,30 @@ label{
   width: 20%;
   display: none;
 } 
+
+/* para dispositivos ate 500 de lagurar */
+
+@media (max-width: 500px) {
+  
+  
+  .divAtivarLocalizacao{
+   bottom: 140px;
+   cursor: pointer;
+  }
+  .divAtivarLocalizacao p{
+
+    padding: 30px 14px;
+    cursor: pointer;
+
+    
+  }
+
+  .caixaIconeMenu{
+    padding: 3px 13px;
+  }
+  
+}
+/*FIM  para dispositivos ate 500 de lagurar */
 
 /* Icone de retornar ao menu */
 
