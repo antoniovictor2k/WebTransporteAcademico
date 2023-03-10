@@ -37,14 +37,34 @@
   background-color: #000000;
   border-radius: 50px;
   padding: 22px 5px;
-  
+  border: 1px solid #00ff15;
+
 }
 
 
 .divAtivarLocalizacao p:hover{
     cursor: pointer;
     background: rgba(0, 0, 0, 0.192);
+    border: 1px solid #ff0000;
+
 }
+/* para dispositivos ate 500 de lagurar */
+
+@media (max-width: 500px) {
+  
+  
+  .divAtivarLocalizacao{
+   bottom: 170px;
+  }
+  .divAtivarLocalizacao p{
+
+    padding: 30px 14px;
+
+    
+  }
+  
+}
+/*FIM  para dispositivos ate 500 de lagurar */
 /* não aparecer na tela */
 .gmnoprint, .gm-control-active, #checkboxMenu {
   display: none;
@@ -256,19 +276,3 @@ bottom: 5px;
   width: 50px;
 
 }
-/* para dispositivos ate 500 de lagurar */
-
-@media (max-width: 500px) {
-  
-  
-  .custom-map-control-button{
-    font-weight: 500;
-    padding: 38px 15px;
-        
-    margin: 34em;
-
-    border: 1px solid #00ffaa;
-  }
-  
-}
-/*FIM  para dispositivos ate 500 de lagurar */
