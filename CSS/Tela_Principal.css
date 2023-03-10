@@ -16,20 +16,34 @@
     
     cursor: default;
   }
-.custom-map-control-button{
-   border: 0;
-   border-radius: 50px;
-   margin: 38em;
-   padding: 20px;
-   font: 400 18px Roboto, Arial, sans-serif;
-   background-color: #000000;
-   color: #fff;
-   cursor: default;
+ 
+
+.divAtivarLocalizacao{
+  position: relative;
+  
+  bottom: 100px;
+  font-size: 1.2em;
+  font-weight: 600;
+ 
+  color: #fff;
+  cursor: default;
+  
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+}
+.divAtivarLocalizacao p{
+  background-color: #000000;
+  border-radius: 50px;
+  padding: 22px 5px;
+  
 }
 
-.custom-map-control-button:hover{
+
+.divAtivarLocalizacao p:hover{
     cursor: pointer;
-    background: rgb(0, 92, 49);
+    background: rgba(0, 0, 0, 0.192);
 }
 /* não aparecer na tela */
 .gmnoprint, .gm-control-active, #checkboxMenu {

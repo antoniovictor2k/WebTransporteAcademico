@@ -1,5 +1,5 @@
 let map, infoWindow;
-
+let divAtivarLocalizacao = document.querySelector(".divAtivarLocalizacao");
 
 
 //  -35.803929
@@ -38,12 +38,15 @@ function initMap() {
 // infoWindow = new google.maps.infoWindow();
 infoWindow = new google.maps.InfoWindow();
 
-const locationButton = document.createElement("button");
+// const locationButton = document.createElement("button");
 
-locationButton.textContent = "Ativador";
-locationButton.classList.add("custom-map-control-button");
-map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
-locationButton.addEventListener("click", ()=>{
+// locationButton.textContent = "Ativar";
+// locationButton.classList.add("custom-map-control-button");
+// map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
+// locationButton.addEventListener("click", chamateste)
+divAtivarLocalizacao.addEventListener("click", chamateste)
+
+function chamateste(){
 
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(
@@ -68,7 +71,7 @@ locationButton.addEventListener("click", ()=>{
     }
 
 
-});
+};
 
 // teste de button
 

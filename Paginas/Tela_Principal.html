@@ -9,19 +9,22 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" type="text/css" href="../CSS/Tela_Principal.css" />
     <link rel="shortcut icon" href="../img/icon_favicon.png" type="image/x-icon">
-    <script type="module" src="../Javascript/Tela_Principal.js"></script>
-    <script src="../Javascript/Tela_login.js"></script>
   </head>
   <body>
-
+    
     <!-- <div class="barraSuperior">
-        ola
+      ola
     </div>
     <div class="barraInferior"></div> -->
     <div id="map">
       
       
       
+    </div>
+    <div class="divAtivarLocalizacao" >
+      <p>
+        Ativar
+      </p>
     </div>
     <div class="caixaIconeMenu">
       <label for="checkboxMenu">&#8801;</label>
@@ -32,7 +35,7 @@
     <div id="caixaTelaMenu">
       <!-- Inicio Container Opçães menu -->
       <div class="container">
-<!-- menuIndetificacao -->
+        <!-- menuIndetificacao -->
         <div class="menuIndetificacao">
           <div class="divMenuImg">
             <img src="../img/User.png" alt="Icon_Perfil">
@@ -44,49 +47,51 @@
           </div>
 
         </div>
-<!--FIM menuIndetificacao -->
-<div class="divLinhaHorizontal"></div>
+        <!--FIM menuIndetificacao -->
+        <div class="divLinhaHorizontal"></div>
 
-
-<div class="divMenuButton">
-
+        
+        <div class="divMenuButton">
+          
   <div><a href="">Sobre</a></div>
   <div><a href="">Contados</a></div>
   <!-- <div>Alterar Dados</div>
-  <div>Excluir Conta</div> -->
-  <div><a href="">Configuração</a></div>
-</div>
-
-<div class="divLinhaHorizontal"></div>
-<div class="divMenuLinks">
-  <div>
-    <a href="">
-      Tutorial de como utilizar o app.
-    </a>
+    <div>Excluir Conta</div> -->
+    <div><a href="">Configuração</a></div>
   </div>
-  <div>
-
-    <a href="">
-      Termo de uso e de privacidade.</a>
-  </div>
-</div>
-
-<div class="divButtonSair" >
-  <p onclick="voltaTelaLogin()">Sair</p>
-</div>
-
-<div class="divDesenvolvedor">Deseveloper by JEVA System - 2023 &#169;</div>
-      </div>
-       <!--FIM Inicio Container Opçães menu -->
+  
+  <div class="divLinhaHorizontal"></div>
+  <div class="divMenuLinks">
+    <div>
+      <a href="">
+        Tutorial de como utilizar o app.
+      </a>
     </div>
-      <div id="caixaRetirarMenu"><label for="checkboxMenu">
-        <img src="../img/Icon_Retorna_Pagina.png" class="imgRetornarMenu" alt="icon_voltar">
-      </label></div>
+    <div>
+      
+      <a href="">
+        Termo de uso e de privacidade.</a>
+      </div>
+    </div>
     
+    <div class="divButtonSair" >
+      <p onclick="voltaTelaLogin()">Sair</p>
+    </div>
     
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRMU4LkxXu-mcV8mtB-p0R5jBR0V1iWI8&callback=initMap&libraries=marker,places&v=beta"
-      defer
-    ></script>
-  </body>
-</html>
+    <div class="divDesenvolvedor">Deseveloper by JEVA System - 2023 &#169;</div>
+  </div>
+  <!--FIM Inicio Container Opçães menu -->
+</div>
+<div id="caixaRetirarMenu"><label for="checkboxMenu">
+  <img src="../img/Icon_Retorna_Pagina.png" class="imgRetornarMenu" alt="icon_voltar">
+</label></div>
+
+
+<script type="module" src="../Javascript/Tela_Principal.js"></script>
+<script src="../Javascript/Tela_login.js"></script>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRMU4LkxXu-mcV8mtB-p0R5jBR0V1iWI8&callback=initMap&libraries=marker,places&v=beta"
+defer
+></script>
+    </body>
+    </html>
