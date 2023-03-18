@@ -1,0 +1,53 @@
+html, body {
+    font-family: 'Inter';
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+    background: #113036;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.introducao {
+    text-align: center;
+    max-width: 420px;
+}
+
+.linguagens-programas {
+    text-align: center;
+    max-width: 420px;
+}
+
+.desenvolvedores {
+    text-align: center;
+    max-width: 420px;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -23%;
+    line-height: 25px;
+}
+
+.link {
+    color: rgb(255, 0, 0);
+}
+
+/* 
+    Talvez precise fazer alteração na cor do link 
+    Precisa inserir ela na Tela_Principal.html quando esta tiver completa
+*/
