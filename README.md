@@ -5,8 +5,8 @@ Testando geolocalização de API google MAPS ... ate o momento funcionando ....
 # criar tela principal com fundo do google maps - ok
 # criar tela de termos de uso e política de privacidade - ok
 # criar tela menu 
-*    Sobre - 90% 
-*   Contatos - 75% (precisa ser modificado)
+*    Sobre - ok
+*   Contatos - 75% (precisa inserir icones ao lado dos nomes)
 *  configuração -
 # telas flex box - ok
 # javaScript de verificação para telas - ok
