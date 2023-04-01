@@ -23,18 +23,17 @@ html, body {
     max-width: 420px;
 }
 
-li {
-    list-style-type: none;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: -23%;
-    line-height: 25px;
-}
-
 .link {
 color: rgb(92, 92, 192);
 text-decoration: none;
 }
 
+.icons {
+    margin-left: 4%;
+    width: 30px;
+    display: inline;
+}
+
+#ano {
+    margin-top: 250px;
+}
