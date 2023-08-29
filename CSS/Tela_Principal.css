@@ -42,66 +42,13 @@ body {
 .gmnoprint,
 .gm-control-active,
 #checkboxMenu {
-  /* display: none; */
+  display: none;
 }
 
 #heckboxMenu {
   cursor: default;
 }
 
-.caixaIconeMenu {
-
-  background-color: #000;
-  border-radius: 50px;
-  padding: 1px 15px;
-  font-size: 2em;
-  color: #fff;
-
-  position: absolute;
-  left: 15px;
-  top: 10px;
-
-  cursor: default;
-
-}
-
-label {
-  cursor: pointer;
-}
-
-/* tela preta do menu */
-#caixaTelaMenu {
-  position: absolute;
-  top: 0;
-  background-color: #000;
-  height: 100%;
-  width: 80%;
-
-  /* block para testar e desenvolver o Menu */
-
-  display: none;
-}
-
-/* Para Exibir a tela preta do Menu */
-#checkboxMenu:checked~#caixaTelaMenu {
-  display: block;
-}
-
-/* Para Volta a tela Normal */
-#checkboxMenu:checked~#caixaRetirarMenu label {
-  display: block;
-}
-
-/* Tela transparente para feicha menu */
-#caixaRetirarMenu label {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  height: 100%;
-  width: 20%;
-  display: none;
-}
 
 /* para dispositivos ate 500 de lagurar */
 
@@ -268,6 +215,10 @@ a {
 
 
 /* img do onibus */
+
+element.style{
+  display: none;
+}
 .gm-style .gm-style-iw-c {
   position: absolute;
   -webkit-box-sizing: 0;
@@ -291,7 +242,10 @@ a {
 }
 
 .gm-style-iw-tc,
-.gm-ui-hover-effect {
+.gm-ui-hover-effect,
+.gm-ui-hover-effect,
+button.gm-ui-hover-effect,
+.gm-style-iw gm-style-iw-c {
   display: none;
 }
 
@@ -299,3 +253,10 @@ a {
   width: 50px;
 
 }
+/* .custom-infowindow {
+  padding: 10px; 
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  
+  cursor: pointer;
+} */
