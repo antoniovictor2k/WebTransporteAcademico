@@ -1,5 +1,5 @@
 let map, infoWindow;
-let divAtivarLocalizacao = document.querySelector(".divAtivarLocalizacao");
+// let divAtivarLocalizacao = document.querySelector(".divAtivarLocalizacao");
 
 
 //  -35.803929
@@ -9,44 +9,15 @@ let divAtivarLocalizacao = document.querySelector(".divAtivarLocalizacao");
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: -9.511309, lng: -35.803929 },
-        zoom: 13,
+        zoom: 18,
         
     });
-    //   const markerView = new google.maps.marker.AdvancedMarkerView({
-        //     map,
-        //     position: { lat: -9.570922, lng:-35.772275 },
-        //   });
-       
-    //    codigo para cria uma localização com imagem
-       
-    //     const beachFlagImg = document.createElement("img");
-        
-        
-        
-        // beachFlagImg.src  = "img/icononibus.jpg" ;
-        
-        
-    //     const beachFlagMarkerView = new google.maps.marker.AdvancedMarkerView({
-    //         map,
-    //         position: { lat: -9.570922, lng: -35.772275 },
-    //         content: beachFlagImg ,
-    //         title: "A marker using a custom PNG Image",
-    //     });
-    //     beachFlagImg.style.width = '80px';
-
     
-// infoWindow = new google.maps.infoWindow();
 infoWindow = new google.maps.InfoWindow();
 
-// const locationButton = document.createElement("button");
+// divAtivarLocalizacao.addEventListener("click", chamateste)
 
-// locationButton.textContent = "Ativar";
-// locationButton.classList.add("custom-map-control-button");
-// map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
-// locationButton.addEventListener("click", chamateste)
-divAtivarLocalizacao.addEventListener("click", chamateste)
-
-function chamateste(){
+const chamateste = () => {
 
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(
@@ -70,57 +41,14 @@ function chamateste(){
         handleLocationError(false, infoWindow, map.getCenter());
     }
 
-
 };
 
-// teste de button
 
-
+chamateste();
 
 }
 
-// function chamafuncao() {
-//     map = new google.maps.Map(document.getElementById("map"), {
-//         center: { lat: -9.577058, lng: -35.761117 },
-//         zoom: 14
-        
-//     });
 
-//     infoWindow = new google.maps.InfoWindow();
-
-// const locationButton = document.createElement("button");
-
-// locationButton.textContent = "Pan to Current Location";
-// locationButton.classList.add("custom-map-control-button");
-// map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
-// locationButton.addEventListener("click", ()=>{
-
-//     if(navigator.geolocation){
-//         navigator.geolocation.getCurrentPosition(
-//             (position) =>{
-//                 const pos = {
-//                     lat: position.coords.latitude,
-//                     lng: position.coords.longitude,
-//                 };
-
-//                 infoWindow.setPosition(pos);
-//                 infoWindow.setContent("Location found.");
-//                 infoWindow.open(map);
-//                 map.setCenter(pos);
-//             },
-//             () => {
-//                 handleLocationError(true, infoWindow, map.getCenter());
-//             }
-//         );   
-//     }
-//     else {
-//         handleLocationError(false, infoWindow, map.getCenter());
-//     }
-
-
-// });
-// }
-// -9.570922, -35.772275
 
 
 window.initMap = initMap;
