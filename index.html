@@ -4,35 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="CSS/Tela_Login.css">
+    <title>Web Transporte Academico</title>
+    <link rel="stylesheet" href="Style.css">
     <link rel="shortcut icon" href="img/icon_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
 </head>
-<body>
-    <!--Inicio container -->
-<div class="container">
+<body onload="localizarTransporte()">
+ 
 
-    <div class="logoMarca">
-<img src="img/LogoMarca.png" alt="Icone_Onibus">
-
-    </div>
-    <!-- FIm logo Marca -->
-  
-    <!-- fim inputSenha -->
-    <div class="buttonEntrar" onclick="fazerLogin()">
-<p>Entrar</p>
-    </div>
-    <!-- Fim buttonEntrar -->
-  
-    
-
-
-</div>
- <!--FIM container -->
+    <div id="map" class="mapStyle"></div>
 
 
 
-      <script src="Javascript/Tela_login.js"></script>
-      <script src="Api.js"></script>
+    <script src="API.js"></script>
 </body>
 </html>

@@ -1,16 +1,25 @@
-const apiRest = 'https://back-end-transporte-academico.vercel.app/receberlocalizacao/64d6e99b9685703099a16352';
+const localizarTransporte = () => {
 
-//  "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json";
-var requestURL = apiRest;
+  
+  const latitude = "-9.570223";
+  const longitude = "-35.771348";
+
+
+  const customIcon = L.icon({
+    iconUrl: './bus_des.png', // Substitua pelo caminho do seu ícone personalizado
+    iconSize: [32, 32], // Tamanho do ícone em pixels
+    iconAnchor: [16, 32], // Ponto de ancoragem do ícone (geralmente na metade inferior)
+  });
+  
+
+        var mymap = L.map("map").setView([latitude, longitude], 10); // Coordenadas e nível de zoom
+        var marker = L.marker([-9.580223, -35.991348], { icon: customIcon }).addTo(mymap); // Coordenadas do marcador
+
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(mymap);
+
+      
  
-var request = new XMLHttpRequest();
-request.open("GET", requestURL);
-request.responseType = "json";
-request.send();
-
-request.onload = function () {
-  var superHeroes = request.response;
-//   populateHeader(superHeroes);
-//   showHeroes(superHeroes);
-  console.log(superHeroes);
 };
