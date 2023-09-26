@@ -1,32 +1,34 @@
-/* Importação fonte do google */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
-
-
-
-/* INICIO Estilo para todos dispositivos. */
-
-
 body {
     margin: 0;
     border: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    background-color: #13293d;
-    color: #BEBEBE;
+    background-color: #113036;
+    color: #B0B0B0;
 }
 
 header {
-    background-color: #BEBEBE;
-    color: #000;
-    border-radius: 0px 0px 20px 20px;
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #051C21;
+    color: #B0B0B0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    height: 70px;
+    border-radius: 0px 0px 8px 8px;
 }
 
-.smartphone {
-    display: none;
+a {
+    color: #BEBEBE;
 }
 
+pre {
+    margin-top: -2px;
+}
 
 .desktop,
 .leaflet-control-zoom-in,
@@ -37,85 +39,6 @@ header {
 
 .mapStyle {
     width: 100%;
-    height: 54.5em;
-    border-radius: 16px;
+    height: 1000px;
+    border-radius: 8px;
 }
-
-
-
-footer {
-    margin-top: 90px;
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 40px;
-    background-color: #BEBEBE;
-    color: #000;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-}
-
-footer p {
-    font-size: 0.8em;
-}
-
-/* FIM Estilo para todos dispositivos. */
-
-
-
-/* INICIO Smartphone Vertical */
-
-
-@media (max-width: 450px) {
-
-
-    header {
-        height: 140px;
-        border-radius: 0px;
-        margin-bottom: 70px;
-    }
-
-    .smartphone {
-        display: block;
-    }
-
-   
-    .flew-smart-header {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .logoMenu img {
-        width: 30px;
-        height: 35px;
-    }
-
-    .flex {
-        flex-direction: column;
-        margin: 0;
-        padding: 15px 15px 0px 0px;
-        border: 0;
-    }
-
- 
-    .mapStyle {
-        width: 360px;
-        height: 500px;
-        border-radius: 8px;
-    }
-
-    footer {
-        margin-top: 50px;
-        border-radius: 0px;
-        position: relative;
-    }
-
-    footer p {
-        padding-top: 10px;
-        font-size: 0.8em;
-    }
-}
-
-/* FIM Smartphone Vertical */
