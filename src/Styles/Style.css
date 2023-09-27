@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    background-color: #113036;
+    color: #B0B0B0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #051C21;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    height: 70px;
+}
+
+a {
+    color: #051C21;
+}
+
+pre {
+    margin-top: -2px;
+}
+
+.infor {
+    color: #a7a7a7;
+    margin-left: 15px;
+    margin-top: 15px;
+    padding: 15px 10px 5px 10px;
+    position: fixed;
+    z-index: 999;
+    background-color: #051c21;
+    border-radius: 8px;
+}
+
+#usuario,
+#compartilhando,
+#hora,
+#destino {
+    color: aliceblue;
+}
+
+.desktop,
+.leaflet-control-zoom-in,
+.leaflet-top,
+.leaflet-left {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+    color: #051C21;
+    font-size: 1.1em;
+}
+
+.mapStyle {
+    width: 100%;
+    height: 1000px;
+    border-radius: 8px;
+}
+
+/* smartphone vertical */
+
+@media screen and (max-width: 470px) {
+
+    .infor {
+        margin-top: 80px;
+        background-color: #051c2123;
+        color: #000000;
+        font-size: 0.8em;
+        font-weight: 700;
+        border-radius: 8px 80px 80px 8px;
+        padding-right: 20px;
+    }
+
+    #usuario,
+    #compartilhando,
+    #hora,
+    #destino {
+        font-size: 1.1em;
+        color: rgb(0, 0, 0);
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+}

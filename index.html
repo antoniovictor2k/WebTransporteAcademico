@@ -6,26 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Transporte Academico</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="shortcut icon" href="img/icon_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/Styles/Style.css">
+    <link rel="shortcut icon" href="./src/assets/icon_favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
 </head>
 
-<body onload="localizarTransporte()">
+<body>
 
     <header>
         <h3>Web Transporte Acâdemico</h3>
-        <pre onclick="teste()">Desenvolvedor <a href="https://www.instagram.com/antoniovictor2k/" target="_blank">@antoniovictor2k</a>
-        </pre>
     </header>
+
+
+    <div class="infor">
+        <pre>Alguém está compartilhando? <span id="compartilhando"></span></pre>
+        <pre>Usúario Compartilhando: <span id="usuario"></span></pre>
+        <pre>Última Atualização: <span id="hora"></span> </pre>
+        <pre>Destino do Ônibus: <span id="destino"></span></pre>
+    </div>
+
+
+
 
     <div id="map" class="mapStyle"></div>
 
 
+    <footer>
+        <pre>Desenvolvedor <a href="https://www.instagram.com/antoniovictor2k/" target="_blank">@antoniovictor2k</a></pre>
+    </footer>
 
-    <script src="API.js"></script>
+    <script src="src/JS/Api.js"></script>
 </body>
 
 </html>
