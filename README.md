@@ -26,7 +26,7 @@ Web Transporte Acadêmico é um aplicativo que permite aos usuários visualizar 
 
 ## Como Usar
 
-1. Acesse o site através do navegador: [Web Transporte acadêmico](antoniovictorlocalizador.netlify.app)
+1. Acesse o site através do navegador: [Web Transporte acadêmico](https://webtransporteacademico.netlify.app)
 
 ## Tecnologias Utilizadas
 
