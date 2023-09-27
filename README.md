@@ -1,24 +1,56 @@
-# ProjetoTesteDeGeolocalizacao
-Testando geolocalização de API google MAPS ... ate o momento funcionando .... 
+# Web Transporte Acadêmico
 
-# criar tela de login e cadastro - ok
-# criar tela principal com fundo do google maps - ok
-# criar tela de termos de uso e política de privacidade - ok
-# criar tela menu 
-*    Sobre - ok
-*   Contatos - 95% (falta inserir links para algumas imagens)
-*  configuração -
-# telas flex box - ok
-# javaScript de verificação para telas - ok
-# armazenar cadastros no banco de dados -
-# conseguir acessar login com buscar banco de dados -  
+Web Transporte Acadêmico é um aplicativo que permite aos usuários visualizar a localização do transporte acadêmico, sem a necessidade de compartilhar sua própria localização ou até mesmo criar uma conta no aplicativo transporte acadêmico.
+
+## Tela
+
+### Desktop 
+
+<img src="/src/assets/desktopwebTA.png" alt="Tela inicial do Aplicativo Transporte Acadêmico" width="1000" height="700">
+
+### Smartphone 
+
+<img src="/src/assets/smartphonewebTA.png" alt="Tela inicial do Aplicativo Transporte Acadêmico" width="400" height="700">
+
+## Funcionalidades Principais
+
+- Visualize a localização atual do transporte acadêmico.
+- Não é necessário compartilhar sua própria localização.
+- Suporte para Android, iOS e desktop.
+- Não Precisa criar conta.
 
 
+## Requisitos do Sistema
 
-Link Online Para acessar o site https://geolocalizacateste.netlify.app 
+- Navegador web com internet.
 
+## Como Usar
 
+1. Acesse o site através do navegador: [Web Transporte acadêmico](antoniovictorlocalizador.netlify.app)
 
-developer by Antonio victor e Jeallyson Ferreira, 3º módulo, Turma 913-A, Instituto Federal de Alagoas - Campus Rio Largo.
-Front-end e Back-end.
-09 - 03 - 2023
+## Tecnologias Utilizadas
+
+- **HTML**: A estrutura básica do site é criada usando HTML.
+
+- **CSS**: O CSS é utilizado para estilizar e formatar a aparência do site, tornando-o atraente e fácil de ler para os usuários.
+
+- **JavaScript**: O JavaScript é usado para interagir com a API de Geolocalização do navegador e exibir as informações ao usuário.
+
+## Contribuindo
+
+Se você deseja contribuir para o desenvolvimento deste projeto, siga estas etapas:
+
+1. Faça um fork do repositório.
+2. Clone o repositório forkado para o seu ambiente de desenvolvimento.
+3. Crie uma branch para suas alterações (`git checkout -b feature/sua-feature`).
+4. Faça commit das suas alterações (`git commit -am 'Adiciona nova funcionalidade'`).
+5. Faça push das alterações para o seu repositório forkado (`git push origin feature/sua-feature`).
+6. Abra um pull request para este repositório.
+
+## Licença
+
+Este projeto é licenciado sob a Licença GPL.
+
+---
+
+Este projeto foi desenvolvido por Antonio Victor e faz parte do projeto App Transporte Acâdemico. Para obter mais informações, entre em contato em avps2@aluno.ifal.edu.br.
