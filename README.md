@@ -1,6 +1,7 @@
 # Web Transporte Acadêmico
 
-Web Transporte Acadêmico é um aplicativo que permite aos usuários visualizar a localização do transporte acadêmico, sem a necessidade de compartilhar sua própria localização ou até mesmo criar uma conta no aplicativo transporte acadêmico.
+Web Transporte Acadêmico é um site que permite aos usuários visualizar a localização do transporte acadêmico, sem a necessidade de compartilhar sua própria localização ou até mesmo criar uma conta no aplicativo transporte acadêmico.
+ele é uma versão do app transporte acadêmico, link no github [aqui](https://github.com/antoniovictor2k/AppTransporteAcademicoNoReactNative)
 
 ## Tela
 
